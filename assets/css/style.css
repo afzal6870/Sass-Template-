@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #f44336;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  font-weight: 800;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul .active {
+  background-color: white;
+}
+.navbar ul .active > a {
+  color: black;
+}
+.navbar ul li {
+  padding: 15px 25px;
+  font-size: 18px;
+}
+.navbar ul li:hover {
+  background-color: white;
+}
+.navbar ul li:hover > a {
+  color: black;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  background-color: #f44336;
+  margin: 0;
+  padding: 128px 16px;
+  text-align: center;
+}
+.header .header-content .header-title {
+  font-size: 64px;
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.header .header-content .header-sub-title {
+  font-size: 24px;
+  color: white;
+  font-weight: lighter;
+  padding: 35px 0px;
+  font-family: "Lato", sans-serif;
+}
+.header .header-content .header-button button {
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  padding: 15px 30px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+.header .header-content .header-button button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+.header .header-content .header-button button:hover {
+  background-color: white;
+}
+.header .header-content .header-button button:hover > a {
+  color: black;
+}
+
+.sec-1 .sec-1-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 150px;
+  padding: 80px 250px;
+}
+.sec-1 .sec-1-container .sec-1-item .icon i {
+  font-size: 200px;
+  color: #f44336;
+  text-align: center;
+}
+.sec-1 .sec-1-container .sec-1-item .heading {
+  font-weight: 400;
+  padding: 20px;
+  font-size: 36px;
+}
+.sec-1 .sec-1-container .sec-1-item .para-1 {
+  padding: 20px;
+  font-family: Verdana, sans-serif;
+}
+.sec-1 .sec-1-container .sec-1-item .para-2 {
+  padding: 20px;
+  font-size: 10px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.sec-3 .quote {
+  display: flex;
+  background-color: black;
+  opacity: 0.6;
+  height: 140px;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  padding: 40px;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer {
+  line-height: 4;
+  text-align: center;
+  font-size: 20px;
+}
+.footer .social-icons i {
+  transition: 0.4s;
+}
+.footer .social-icons i:hover {
+  transition: 0.4s;
+  font-size: 25px;
+  color: #f44336;
+}
+
+@media only screen and (max-width: 1050px) {
+  .sec-1 .sec-1-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    padding: 50px;
+  }
+  .sec-1 .sec-1-container .sec-1-item .icon i {
+    font-size: 200px;
+    color: #f44336;
+  }
+  .sec-1 .sec-1-container .sec-1-item .heading {
+    font-weight: 400;
+    padding: 20px;
+    font-size: 36px;
+  }
+  .sec-1 .sec-1-container .sec-1-item .para-1 {
+    padding: 20px;
+    font-family: Verdana, sans-serif;
+  }
+  .sec-1 .sec-1-container .sec-1-item .para-2 {
+    padding: 20px;
+    font-size: 10px;
+    line-height: 1.5;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sec-1 .sec-1-container {
+    padding: 50px;
+    display: block;
+    text-align: center;
+  }
+  .sec-1 .sec-1-container .sec-1-item .icon i {
+    font-size: 200px;
+    color: #f44336;
+    text-align: center;
+  }
+  .sec-1 .sec-1-container .sec-1-item .heading {
+    font-weight: 400;
+    padding: 20px;
+    font-size: 36px;
+  }
+  .sec-1 .sec-1-container .sec-1-item .para-1 {
+    padding: 20px;
+    font-family: Verdana, sans-serif;
+  }
+  .sec-1 .sec-1-container .sec-1-item .para-2 {
+    padding: 20px;
+    font-size: 10px;
+    line-height: 1.5;
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
